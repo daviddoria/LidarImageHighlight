@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SimpleView</class>
+ <widget class="QMainWindow" name="SimpleView">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>990</width>
+    <height>634</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SimpleView</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QVTKWidget" name="qvtkWidgetLeft" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>511</width>
+      <height>541</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QVTKWidget" name="qvtkWidgetRight" native="true">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>20</y>
+      <width>441</width>
+      <height>541</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnOpenPTXFile">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>600</y>
+      <width>111</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Open PTX File</string>
+    </property>
+   </widget>
+  </widget>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QVTKWidget</class>
+   <extends>QWidget</extends>
+   <header>QVTKWidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
